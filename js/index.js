@@ -15,19 +15,19 @@ voltarTopo.addEventListener("click", () => {
   });
 });
 
-// Lógica do Formulário
+
 const form = document.getElementById("orcamentoForm");
 const modal = document.getElementById("modalSucesso");
 const btnOk = document.getElementById("btnOk");
 
 if (form) {
   form.addEventListener("submit", function(e) {
-    e.preventDefault(); // Impede recarregar a página
+    e.preventDefault();
 
-    // Coleta os dados do formulário
+   
     const formData = new FormData(form);
 
-    // Envia os dados via AJAX para o FormSubmit
+    
     fetch("https://formsubmit.co/ajax/SEU_EMAIL_REAL@gmail.com", {
       method: "POST",
       body: formData,
@@ -55,5 +55,14 @@ if (btnOk) {
     if (form) {
       form.reset(); // Limpa todos os campos
     }
+  });
+}
+
+    }
+    // Adicione esta linha para voltar ao topo
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   });
 }
