@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(img/fundo.jpg);
+  background-image: url(../img/fundo.jpg)
 }
 
 header {
@@ -300,3 +300,4 @@ button {
   color: white;
   cursor: pointer;
 }
+
